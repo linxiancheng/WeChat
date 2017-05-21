@@ -192,6 +192,7 @@ body{
 	font-size: 1.85rem;
 	font-weight: 200;
 	white-space:nowrap;
+	margin:0;
 }
 
 .body_right h3 span{
@@ -225,7 +226,7 @@ body{
 	background-size: contain;
 	position: absolute;
 	right: 1rem;
-	bottom:0;
+	bottom:0.313rem;
 }
 
 .nav{
