@@ -253,7 +253,7 @@ body{
 	width: 1.563rem;
 	height: 1.563rem;
 	display: block;
-	margin: 0 auto 0.125rem auto;
+	margin: 0 auto 0.625rem auto;
 }
 .nav ul li a span.span01{
 	background: url(../img/nav_11.png) no-repeat center;
