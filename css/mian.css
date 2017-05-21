@@ -215,6 +215,7 @@ body{
 	text-overflow: ellipsis;
 	white-space:nowrap;
 	padding-right: 2.25rem;
+	margin:0;
 }
 .body_right i{
 	width: 1.625rem;
