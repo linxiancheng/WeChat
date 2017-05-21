@@ -1,5 +1,5 @@
 html{
-	font-size:100%;
+	font-size:62.5%;
 }
 body{
 	max-width: 750px;
@@ -60,18 +60,18 @@ body{
 }
 .bodys ul li{
 	width: 100%;
-	height: 5.625rem;
+	height: 3.75rem;
 	display: block;
-	padding: 1.25rem 0;
-	border-bottom: 0.063rem solid #ccc;
+	padding: 0.875rem 0;
+	border-bottom: 0.0625rem solid #ccc;
 }
 .bodys ul li:last-child{
 	border-bottom: none;
 
 }
 .body_left{
-	width: 3.125rem;
-	height: 3.55rem;
+	width:2.188rem;
+	height: 2.3rem;
 	overflow: hidden;
 }
 .body_left img{
@@ -85,7 +85,7 @@ body{
 	position: relative;
 }
 .body_right h3{
-	font-size: 2.063rem;
+	font-size: 1.563rem;
 	font-weight: 200;
 	white-space:nowrap;
 }
@@ -99,7 +99,7 @@ body{
 }
 .body_right p{
 	display: block;
-	font-size: 1.875rem;
+	font-size:1.125rem;
 	color: #d9d9d9;
 	width: 100%;
 	overflow: hidden;
@@ -115,12 +115,12 @@ body{
 	max-width: 46.875rem;
 	width: 100%;
 	background: rgba(247,247,247,0.9);
-	height: 60px;
-	height: 6.75rem;
+	/*height: 60px;*/
+	height: 3.25rem;
 	position: fixed;
 	bottom: 0;
 	border-top: 0.063rem solid #999;
-	padding-top:0.625rem;
+	padding:0.313rem 0;
 	z-index: 99;
 }
 .nav ul li a{
@@ -129,14 +129,14 @@ body{
 	float: left;
 	text-align: center;
 	color: #7a7e83;
-	line-height: 1.25rem;
-	font-size: 1.125rem;
+	line-height: 0.735rem;
+	font-size: 0.875rem;
 }
 .nav ul li a span{
-	width: 3.438rem;
-	height: 3.125rem;
+	width: 1.563rem;
+	height: 1.563rem;
 	display: block;
-	margin: 0 auto 0.313rem auto;
+	margin: 0 auto 0.125rem auto;
 }
 .nav ul li a span.span01{
 	background: url(../img/nav_11.png) no-repeat center;
@@ -156,24 +156,25 @@ body{
 	background-size:contain;
 }
 
-.nav ul li a:hover span.span01{
+
+.nav ul li a:hover span.span01,.nav ul li a span.span01.cur{
 	background: url(../img/nav_01.png) no-repeat center;
 	background-size:contain;
 }
 
-.nav ul li a:hover span.span02{
+.nav ul li a:hover span.span02,.nav ul li a span.span02.cur{
 	background: url(../img/nav_02.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover span.span03{
+.nav ul li a:hover span.span03,.nav ul li a span.span03.cur{
 	background: url(../img/nav_03.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover span.span04{
+.nav ul li a:hover span.span04,.nav ul li a span.span04.cur{
 	background: url(../img/nav_04.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover{
+.nav ul li a:hover,.nav ul li a.cur{
 	color: #1aad19;
 }
 
@@ -182,16 +183,16 @@ body{
 
 .me{
 	width: 100%;
-	height: 11rem;
+	height: 7.5rem;
 	background: white;
 	border-bottom: 0.063rem solid #ccc;
 	border-top: 0.063rem solid #ccc;
-	padding: 1.25rem 0 1.25rem 1.25rem;
+	padding: 0.735rem 0 0 1.25rem;
 	box-sizing: border-box;
 }
 .me .body_left{
-	width:  8.125rem;
-	height: 8.125rem;
+	width: 5.625rem;
+	height: 5.625rem;
 	overflow: hidden;
 	border-radius: 0.625rem;
 }
@@ -201,7 +202,7 @@ body{
 	vertical-align: middle;
 }
 .me .body_right{
-	width:calc(100% - 8.125rem);
+	width:calc(100% - 5.625rem);
 	padding:0 1.25rem;
 	position: relative;
 }

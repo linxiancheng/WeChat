@@ -1,5 +1,5 @@
 html{
-	font-size:100%;
+	font-size:62.5%;
 }
 body{
 	max-width: 750px;
@@ -43,7 +43,71 @@ body{
 	background-size: contain;
 	margin:1.25rem 1.25rem 0 0;
 }
-
+#header .indexbox{
+	width:7.5rem;
+	height: 9.375rem;
+	background: #49484b;
+	float: right;
+	margin:1.25rem;
+	display: none;
+	position: relative;
+	border-radius: 0.125rem;
+	box-sizing: border-box;
+	padding: 0.625rem;
+}
+.indexbox ul li{
+	border-bottom: 0.125rem solid #7A7E83;
+}
+.indexbox ul li:last-child{
+	border-bottom: none;
+}
+.indexbox ul li a{
+	display: block;
+	color: white;
+	line-height: 2rem;
+	box-sizing: border-box;
+	margin-left:0.313rem;
+	font-size: 1rem;
+}
+.indexbox ul li a span{
+	display:inline-block;
+	width: 1.25rem;
+	height: 1.25rem;
+	vertical-align: middle;
+	margin-right: 0.625rem;
+}
+.indexbox ul li a span.imgo1{
+	background: url(../img/liao.png) no-repeat;
+	background-size: contain;
+}
+.indexbox ul li a span.imgo2{
+	background: url(../img/jia.png) no-repeat;
+	background-size: contain;
+}
+.indexbox ul li a span.imgo3{
+	background: url(../img/sao.png) no-repeat;
+	background-size: contain;
+}
+.indexbox ul li a span.imgo4{
+	background: url(../img/qian.png) no-repeat;
+	background-size: contain;
+}
+#header .indexbox:before{
+	content: "";
+	display: block;
+	width:0.938rem;
+	height:0.938rem;
+	background: #49484b;
+	position:absolute;
+	top:-0.438rem;
+	right:1.25rem;
+	/* Rotate div */
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* Internet Explorer */
+	-moz-transform:rotate(45deg); /* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+}
 .body{
 	width: 100%;
 	padding:3.75rem 0  8rem 0;
@@ -68,6 +132,7 @@ body{
 	line-height: 2.813rem;
 	border-radius: 0.313rem;
 	text-align: center;
+	
 }
 .body form i{
 	display: block;
@@ -102,15 +167,15 @@ body{
 }
 .body ul li{
 	width: 100%;
-	height: 8.625rem;
+	height: 5.625rem;
 	display: block;
-	padding: 1.25rem 0;
+	padding: 0.875rem 0;
 	border-bottom: 0.063rem solid #ccc;
 
 }
 .body_left{
-	width: 6.25rem;
-	height: 6.25rem;
+	width: 3.75rem;
+	height: 3.75rem;
 	overflow: hidden;
 }
 .body_left img{
@@ -119,12 +184,12 @@ body{
 	vertical-align: middle;
 }
 .body_right{
-	width:calc(100% - 6.25rem);
+	width:calc(100% - 3.75rem);
 	padding:0 1.25rem;
 	position: relative;
 }
 .body_right h3{
-	font-size: 2.063rem;
+	font-size: 1.85rem;
 	font-weight: 200;
 	white-space:nowrap;
 }
@@ -134,35 +199,32 @@ body{
 	font-weight: inherit;
 	position: absolute;
 	top: 0;
-	right: 0.75rem;
+	right: 0.25rem;
 	vertical-align: middle;
 	color: #d9d9d9;
-	line-height: 2.813rem;
 	width: 7rem;
 	overflow: hidden;
 }
 
 .body_right p{
 	display: block;
-	font-size: 1.875rem;
+	font-size: 1.625rem;
 	color: #d9d9d9;
 	width: 100%;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space:nowrap;
-	line-height: 3.25rem;
 	padding-right: 2.25rem;
 }
 .body_right i{
-	width: 1.875rem;
-	height: 1.875rem;
-	float: right;
+	width: 1.625rem;
+	height: 1.625rem;
 	vertical-align: middle;
 	background: url(../img/hide.png) no-repeat;
 	background-size: contain;
 	position: absolute;
 	right: 1rem;
-	bottom: 0.75rem;
+	bottom:0;
 }
 
 .nav{
@@ -170,12 +232,12 @@ body{
 	max-width: 46.875rem;
 	width: 100%;
 	background: rgba(247,247,247,0.9);
-	height: 60px;
-	height: 6.75rem;
+	/*height: 60px;*/
+	height: 3.25rem;
 	position: fixed;
 	bottom: 0;
 	border-top: 0.063rem solid #999;
-	padding-top:0.625rem;
+	padding:0.313rem 0;
 	z-index: 99;
 }
 .nav ul li a{
@@ -184,14 +246,14 @@ body{
 	float: left;
 	text-align: center;
 	color: #7a7e83;
-	line-height: 1.25rem;
-	font-size: 1.125rem;
+	line-height: 0.735rem;
+	font-size: 0.875rem;
 }
 .nav ul li a span{
-	width: 3.438rem;
-	height: 3.125rem;
+	width: 1.563rem;
+	height: 1.563rem;
 	display: block;
-	margin: 0 auto 0.313rem auto;
+	margin: 0 auto 0.125rem auto;
 }
 .nav ul li a span.span01{
 	background: url(../img/nav_11.png) no-repeat center;
@@ -211,40 +273,52 @@ body{
 	background-size:contain;
 }
 
-.nav ul li a:hover span.span01{
+.nav ul li a:hover span.span01,.nav ul li a span.span01.cur{
 	background: url(../img/nav_01.png) no-repeat center;
 	background-size:contain;
 }
 
-.nav ul li a:hover span.span02{
+.nav ul li a:hover span.span02,.nav ul li a span.span02.cur{
 	background: url(../img/nav_02.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover span.span03{
+.nav ul li a:hover span.span03,.nav ul li a span.span03.cur{
 	background: url(../img/nav_03.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover span.span04{
+.nav ul li a:hover span.span04,.nav ul li a span.span04.cur{
 	background: url(../img/nav_04.png) no-repeat center;
 	background-size:contain;
 }
-.nav ul li a:hover{
+.nav ul li a:hover,.nav ul li a.cur{
 	color: #1aad19;
 }
 .call{
 	width: 100%;
-	height: 6.938rem;
+	/*height: 6.938rem;*/
+	padding-left: 1.25rem;
+}
+.body > p{
+	width: 100%;
+	/*height: 6.938rem;*/
+	background: #efeff4;
+	color: #999;
+	text-transform: uppercase;
+	line-height: 1.8;
 	padding-left: 1.25rem;
 }
 .callme{
 	width: 100%;
-	height: 6.938rem;
-	padding: 1.25rem 0;
-	border-bottom:0.063rem solid #ccc;
+	height: 5.625rem;
+	padding: 0.875rem 0;
+	border-bottom:0.063rem solid #ccc !important;
+}
+.call .callme:last-child{
+	border-bottom:none;
 }
 .callme_l{
-	width:  4.688rem;
-	height: 4.688rem;
+	width: 3.75rem;
+	height: 3.75rem;
 	overflow: hidden;
 }
 .callme_l img{
@@ -253,22 +327,22 @@ body{
 	vertical-align: middle;
 }
 .callme_r{
-	width: calc(100% - 4.688rem);
-	height: 4.688rem;
+	width: calc(100% - 3.75rem);
+	height: 3.75rem;
 	overflow: hidden;
-	line-height: 4.688rem;
+	line-height: 3.75rem;
 	padding:0 1.25rem;
 }
 .callme_r h3{
-	font-size: 2.063rem;
+	font-size: 1.563rem;
 	font-weight: 200;
 	white-space:nowrap;
 }
 
 .zimu{
 	position: fixed;
-	top: 20%;
-	right:0.313rem;
+	top:20%;
+	right:2%
 }
 .zimu ul li a{
 	display: block;
@@ -276,14 +350,102 @@ body{
 	padding: 0;
 	line-height:1.2;
 	font-size: 0.875rem;
-	font-weight: bold;
 	text-align: center;
 }
+.search{
+	width: 100%;
+	height: 100%;
+	background: #edeeed;
+}
+.search_top{
+	width: 100%;
+	background: #efeff4;
+	padding: 0.625rem;;
+}
+.search_top a{
+	font-size: 1.25rem;
+	color: #1AAD19;
+	text-align: center;
+	float: left;
+	line-height: 2.5rem;
+	margin-left: 0.313rem;
+}
+.search_top form{
+	float: left;
+	width: 90%;
+	height: 2.5rem;
+	border-radius: 0.313rem;
+	border:0.063rem solid #ccc;
+	background: white;
+}
+.search_top form i{
+	float: left;
+	background: url(../img/ss_ico.png) no-repeat;
+	background-size: contain;
+	width: 1.25rem;
+	height:100%;
+	background-position: 0 0.625rem;
+	margin-left:40%;
+}
+.search_top form input{
+	float: left;
+	width:40%;
+	height:100%;
+	box-sizing: border-box;
+	padding: 0 0.313rem;
+}
+.search_top form button{
+	float: right;
+	background: url(../img/au_icp.png) no-repeat;
+	background-size: contain;
+	width: 1.25rem;
+	height:100%;
+	border: none;
+	background-position: 0 0.313rem;
+	margin-right: 0.313rem;
+}
+.search_bot{
+	width: 100%;
+	margin-top: 3.5rem;
+}
+.search_bot p{
+	text-align: center;
+	font-size: 1.25rem;
+	color: #cdcdcd;
+	
+}
+
+.search_bot ul{
+	margin-top: 2.5rem;
+	width: 100%;
+	text-align: center;
+}
+.search_bot ul li{
+	margin-top: 1.875rem;
+}
+.search_bot ul li a{
+	color: #1AAD19;
+	font-size: 1.875rem;
+	text-align: center;
+}
+.search_bot ul li a:before{
+	content: "|";
+	padding: 0 2.5rem;
+	color: #ccc;
+}
+.search_bot ul li a:nth-child(1):before{
+	content: "";
+	padding: 0;
+}
+
+
+
+
 
 
 @media only screen and (min-width: 320px){
 	html{
-		font-size:62.5%;
+		font-size:62.5% !important;
 	}
 	.zimu ul li a{
 	line-height:0.625rem;
@@ -295,7 +457,7 @@ body{
 }
 @media only screen and (min-width: 375px){
 	html{
-		font-size:70%;
+		font-size:70% !important;
 	}
 	.zimu ul li a{
 	line-height:0.750rem;
@@ -304,7 +466,7 @@ body{
 }
 @media only screen and (min-width:414px){
 	html{
-		font-size:80%;
+		font-size:80% !important;
 	}
 	.zimu ul li a{
 	line-height:0.750rem;
@@ -313,7 +475,7 @@ body{
 }
 @media only screen and (min-width:500px){
 	html{
-		font-size:90%;
+		font-size:90% !important;
 	}
 	.zimu ul li a{
 	line-height:0.750rem;
@@ -322,6 +484,6 @@ body{
 }
 @media only screen and (min-width:600px){
 	html{
-		font-size:100%;
+		font-size:100% !important;
 	}
 }
